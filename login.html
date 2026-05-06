@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - INSA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+
+  <div class="auth-left">
+    <h1>Welcome Back</h1>
+    <p>Access your secure dashboard</p>
+  </div>
+
+  <div class="auth-right">
+    <form class="auth-form" onsubmit="login(event)">
+      <h2>Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Email" required>
+
+      <div class="password-box">
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <span onclick="togglePassword('loginPassword')">👁️</span>
+      </div>
+
+      <button>Login</button>
+
+      <p>New here? <a href="register.html">Create Account</a></p>
+    </form>
+  </div>
+
+</div>
+
+<script src="script.js">
+</script>
+</body>
+</html>A

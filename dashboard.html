@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadDashboard()">
+
+<header>
+  <h2>Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="dashboard">
+  <div class="card">
+    <h3>User</h3>
+    <p id="userName"></p>
+  </div>
+
+  <div class="card">
+    <h3>Plan</h3>
+    <p id="userPlan"></p>
+  </div>
+</div>
+<section class="activity">
+  <h2>Recent Activity</h2>
+  <div id="activityLog"></div>
+</section>
+
+<h2 style="text-align:center">Members</h2>
+<div id="members"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

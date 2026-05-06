@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - INSA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="auth-wrapper">
+
+  <div class="auth-left">
+    <h1>Join HexaShield</h1>
+    <p>Secure your number today</p>
+    <p id="selectedPlanText"></p>
+  </div>
+
+  <div class="auth-right">
+    <form onsubmit="register(event)">
+      <h2>Create Account</h2>
+
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <span onclick="togglePassword('password')">👁️</span>
+      </div>
+
+      <button>Register</button>
+      
+
+      <p>Already have account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

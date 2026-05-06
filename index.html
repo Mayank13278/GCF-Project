@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INSA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<div id="loader">
+  <h1>HexaShield Initializing...</h1>
+</div>
+
+<header class="navbar">
+  <h2>HexaShield</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#plans">Plans</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+    <h1 class="glow-text">Stop Spam. Prevent Fraud. Stay Secure.</h1>
+
+<p>
+HexaShield protects your mobile number from scam calls, fraud attempts, and data leaks using AI-powered security.
+</p>
+
+    <div class="hero-buttons">
+      <button onclick="startNow()" class="primary-btn">Get Started</button>
+      <button onclick="scrollToFeatures()" class="secondary-btn">Learn More</button>
+    </div>
+  </div>
+  <section class="how">
+  <h2>How HexaShield Works</h2>
+
+  <div class="steps">
+    <div>
+      <h3>1. Register</h3>
+      <p>Create your secure account in seconds</p>
+    </div>
+
+    <div>
+      <h3>2. Choose Plan</h3>
+      <p>Select the protection level you need</p>
+    </div>
+
+    <div>
+      <h3>3. Stay Protected</h3>
+      <p>We monitor threats and keep you safe 24/7</p>
+    </div>
+  </div>
+</section>
+<section class="trust">
+  <h2>Trusted by Thousands</h2>
+
+  <div class="stats">
+    <div><h3>1M+</h3><p>Users Protected</p></div>
+    <div><h3>500K+</h3><p>Frauds Prevented</p></div>
+    <div><h3>99.9%</h3><p>Detection Accuracy</p></div>
+  </div>
+  <section class="why">
+  <h2>Why Choose HexaShield?</h2>
+
+  <div class="feature-box">
+    <div>⚡ Instant Alerts</div>
+    <div>🔐 AI Protection</div>
+    <div>📡 Real-Time Monitoring</div>
+    <div>🛡️ Trusted Security</div>
+  </div>
+</section>
+</section>
+
+  <!-- Floating Elements -->
+  <div class="floating-icons">
+    <span>🔒</span>
+    <span>🛡️</span>
+    <span>📡</span>
+    <span>⚡</span>
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features">
+  <h2>Our Services</h2>
+
+  <div class="feature-box">
+  <div onclick="showService('spam')">📞 Spam Detection</div>
+  <div onclick="showService('fraud')">🛡️ Fraud Protection</div>
+  <div onclick="showService('tracking')">📍 Live Tracking</div>
+  <div onclick="showService('alert')">🚨 Emergency Alerts</div>
+</div>
+
+
+
+<section class="threat">
+  <h2>Live Threat Monitoring</h2>
+  <div id="threatBox"></div>
+</section>
+
+<!-- Add this below -->
+<div id="serviceInfo" class="service-info"></div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div><h3 class="counter" data-target="1000000">0</h3><p>Users Protected</p></div>
+  <div><h3 class="counter" data-target="500000">0</h3><p>Frauds Prevented</p></div>
+  <div><h3 class="counter" data-target="99">0</h3><p>Accuracy %</p></div>
+</div>
+
+
+<!-- PLANS -->
+<section id="plans">
+  <h2>Choose Your Plan</h2>
+
+  <div class="plans">
+    <div class="plan-card" onclick="selectPlan(this,'Basic')">
+      <h3>Basic</h3>
+      <p>₹199/month</p>
+    </div>
+
+    <div class="plan-card" onclick="selectPlan(this,'Standard')">
+      <h3>Standard</h3>
+      <p>₹499/month</p>
+    </div>
+
+    <div class="plan-card" onclick="selectPlan(this,'Premium')">
+      <h3>Premium</h3>
+      <p>₹999/month</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Secure Your Number Today</h2>
+  <button onclick="startNow()">Start Protection Now</button>
+</section>
+
+<footer>
+  <p>© 2026 HexaShield| Contact: support@HexaShield.in</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
